@@ -24,7 +24,7 @@ var tronGridUriParams = map[string]string{
 type TrongridResponse struct {
 	Total        int `json:"total"`
 	RangeTotal   int `json:"rangeTotal"`
-	ContractInfo struct {
+	ContractInfo []struct {
 	} `json:"contractInfo"`
 	TokenTransfers []struct {
 		TransactionId   string `json:"transaction_id"`
